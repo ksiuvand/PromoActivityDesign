@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginVertical="5dp"
+        android:weightSum="6"
+        android:layout_marginHorizontal="5dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:src="@drawable/logotop"
+            android:layout_gravity="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="KZT"
+                android:fontFamily="@font/aeroport"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:layout_marginRight="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="7804.77"
+                android:fontFamily="@font/aeroport"
+                android:textColor="@color/white"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Бонус"
+                android:fontFamily="@font/aeroport"
+                android:textColor="@color/red"
+                android:textSize="8sp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="400 KZT"
+                android:fontFamily="@font/aeroport"
+                android:textColor="@color/white"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="CashBack"
+                android:fontFamily="@font/aeroport"
+                android:textColor="@color/red"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="12.04 KZT"
+                android:fontFamily="@font/aeroport"
+                android:textColor="@color/white"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="23dp"
+            android:src="@drawable/burger"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="27dp"
+            android:layout_weight="1"
+            android:src="@drawable/exit"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/aeroport"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:text="ПРОМОКОД"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Введите промокод"
+                        android:fontFamily="@font/aeroport"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:foreground="@color/background"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:minHeight="45dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittxt"
+                        android:hint="Промокод"
+                        android:textColorHint="@color/color_edit_hint"
+                        android:textColor="@color/color_edit_hint"
+                        android:paddingLeft="15dp"
+                        android:fontFamily="@font/aeroport"
+                        android:textCursorDrawable="@drawable/editpech"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textSize="14sp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/registr"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/sq4f"
+                        android:textColor="@color/white"
+                        android:text="Активировать"
+                        android:layout_marginTop="20dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/buttonfon"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginVertical="10dp"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/news"
+                    app:tint="@color/ton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Новости"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/aeroport"
+                    android:textColor="@color/ton"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/promocod"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Промокод"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/aeroport"
+                    android:textColor="@color/red"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="29dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/referal"
+                    app:tint="@color/ton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Реферал"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/aeroport"
+                    android:textColor="@color/ton"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/tarif"
+                    app:tint="@color/ton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Тарифы"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/aeroport"
+                    android:textColor="@color/ton"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/playstation"
+                    app:tint="@color/ton"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Playstation"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/aeroport"
+                    android:textColor="@color/ton"
+                    android:textSize="8sp"/>
+
+            </LinearLayout>
+
+            м<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="63dp"
+                android:layout_height="25dp"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Бронирование"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/aeroport"
+                android:textColor="@color/ton"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
